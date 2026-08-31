@@ -75,6 +75,5 @@ userForm.addEventListener("submit", function(event) {
         return;
     }
     
-    alert("your reservation form is valid!");
-    
+    alert("Your reservation form is valid! Thank you for your reservation.");    
 });
