@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0", charset="UTF-8">
+    <title>Delicious Restaurant</title>
+    <script src="resturant.js" defer></script>
+    <link rel="stylesheet" href="restaurant-landing-page.css">
+</head>
+
+
+<body>
+
+<!-- Header -->
+
+    <header>
+        <h1>🍽 Delicious Restaurant</h1>
+        <p>Fresh Food •  Amazing Taste • Beautiful Experience</p>
+    </header>
+
+<!-- Navigation -->
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#reservation">Reservation</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+<main>
+    <!-- Hero Section -->
+     
+    <section id="home" class="hero">
+            
+            <img src="images/images.jpg" alt="Restaurant Interior">
+
+    </section>
+
+<!-- Welcome Section -->
+ 
+    <section class="welcome">
+        
+        <h2>Welcome to Delicious Restaurant</h2>
+         <p> At Delicious Restaurant, every meal is prepared using fresh ingredients and served with care. Whether you are here for lunch, dinner, or a family celebration, we promise an unforgettable dining experience. </p>
+
+    </section>
+
+<!-- Popular Dishes -->
+
+        <section id="menu">
+            
+            <h2>Our Popular Dishes</h2>
+            
+            <div class="food-container">
+
+                <article class="food-card">
+
+                    <figure>
+
+                        <img src="images/pizza pic.jpg" alt="Italian Pizza">
+
+                        <figcaption>Italian Pizza</figcaption>
+
+                    </figure>
+
+                    <p> Fresh pizza topped with mozzarella cheese, tomatoes, olives, and special Italian sauce. </p>
+            
+
+                </article>
+
+                <article class="food-card">
+
+                    <figure>
+
+                        <img src="images/burger.jpg" alt="Classic Burger">
+
+                        <figcaption>Classic Burger</figcaption>
+
+                    </figure>
+
+                    <p> Juicy beef burger served with crispy fries and fresh vegetables. </p>
+
+                </article>
+
+                <article class="food-card">
+
+                    <figure>
+
+                        <img src="images/pasta.jpg" alt="Creamy Pasta">
+
+                        <figcaption>Creamy Pasta</figcaption>
+
+                    </figure>
+
+                    <p>
+                        Delicious creamy pasta cooked with mushrooms, herbs, and parmesan cheese. </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+<!-- About -->
+
+        <section id="about">
+            
+            <h2>About Our Restaurant</h2>
+
+            <p> Since 2015, Delicious Restaurant has been serving high-quality meals prepared by experienced chefs. Our goal is to create memorable dining experiences through excellent food and exceptional customer service. </p>
+
+        </section>
+
+<!-- Opening Hours -->
+ 
+       <section class="hours">
+        <h2>Opening Hours</h2>
+        
+        <div class="hours-card">
+
+        <p><strong>Monday - Friday</strong><span>9:00 AM - 10:00 PM</span></p>
+
+        <p><strong>Saturday</strong><span>10:00 AM - 11:00 PM</span></p>
+
+        <p><strong>Sunday</strong><span>10:00 AM - 9:00 PM</span></p>
+       
+    </div>
+
+</section>
+
+<!-- Reservation Form -->
+ 
+<section id="reservation">
+    
+    <h2>Reserve Your Table</h2>
+
+    <form id= "form" action="https://formspree.io/f/mnqvydqj" method="POST">
+
+
+<!-- Personal Information -->
+
+        <fieldset>
+
+            <legend>Personal Information</legend>
+
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" >
+
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" >
+
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+93xxxxxxxxx" required>
+
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="********" required>
+
+        </fieldset>
+
+
+<!-- Reservation Details -->
+
+        <fieldset>
+
+            <legend>Reservation Details</legend>
+
+
+            <label for="date">Reservation Date</label>
+            <input type="date" id="date" name="date" required>
+
+
+            <label for="time">Reservation Time</label>
+            <input type="time" id="time" name="time" required>
+
+
+            <label for="guests">Number of Guests</label>
+            <input type="number" id="guests" name="guests"
+            min="1" max="20" placeholder="Number of guests" required>
+
+        </fieldset>
+
+
+<!-- Food Selection -->
+
+        <fieldset>
+
+            <legend>Food Selection</legend>
+
+            <label for="food">Choose Your Food</label>
+
+            <select id="food" name="food">
+
+                <option value="pizza">🍕 Pizza</option>
+
+                <option value="burger">🍔 Burger</option>
+
+                <option value="pasta">🍝 Pasta</option>
+
+                <option value="salad">🥗 Salad</option>
+
+                <option value="dessert">🍰 Dessert</option>
+
+            </select>
+
+
+        </fieldset>
+
+<!-- Drinks -->
+
+        <fieldset>
+            <legend>Drinks</legend>
+            
+            <label>
+                <input type="checkbox" name="drinks" value="Tea">
+                Tea ☕
+            </label>
+            
+            <label>
+                <input type="checkbox" name="drinks" value="Coffee">
+                Coffee ☕
+            </label>
+            
+            <label>
+                <input type="checkbox" name="drinks" value="Juice">
+                Juice 🧃
+            </label>
+            
+            <label>
+                <input type="checkbox" name="drinks" value="Cola">
+                Cola 🥤
+            </label>
+
+</fieldset>
+
+
+
+<!-- Upload Receipt -->
+
+        <fieldset>
+
+            <legend>Upload Receipt</legend>
+            
+            <label for="receipt">Choose File</label>
+            <input type="file" id="receipt" name="receipt">
+        
+        </fieldset>
+
+
+<!-- Additional Comments -->
+
+        <fieldset>
+
+            <legend>Additional Comments</legend>
+
+
+            <textarea id="request" name="request"
+            rows="5"
+            placeholder="Write your special request..."></textarea>
+
+
+        </fieldset>
+
+
+
+
+<!-- Buttons -->
+
+        <div class="form-buttons">
+
+            <input type="submit" value="Reserve Table">
+
+            <input type="reset" value="Clear Form">
+
+        </div>
+
+
+ </form>
+
+</section>
+
+</main>
+
+
+<!-- Footer -->
+
+    <footer id="contact">
+
+        <p><strong>Delicious Restaurant</strong></p>
+
+        <p>📍 Kabul, Afghanistan</p>
+
+        <p>📞 +93 700 123 456</p>
+
+        <p>✉ deliciousrestaurant@email.com</p>
+
+        <p>&copy; 2026 Delicious Restaurant. All Rights Reserved.</p>
+
+    </footer>
+
+</body>
+
+</html>

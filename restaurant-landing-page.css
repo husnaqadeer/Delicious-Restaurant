@@ -1,0 +1,335 @@
+/* General Styles */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background-color:rgb(255, 248, 242);
+    color:rgb(51, 51, 51);
+    line-height:1.6;
+}
+
+/* Header */
+
+header{
+    background-color:rgb(139, 69, 19);
+    color:white;
+    text-align:center;
+    padding:25px 15px;
+}
+
+header h1{
+    font-size:30px;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:16px;
+}
+
+/* Navigation */
+
+nav{
+    background-color:rgb(34, 34, 34);
+    display:flex;
+    flex-direction:column;
+}
+
+
+nav a{
+    color:white;
+    text-decoration:none;
+    padding:16px 25px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    background-color:rgb(201, 124, 93);
+}
+
+/* Hero Image */
+
+.hero img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    display:block;
+    border-radius:25px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+
+}
+
+/* Sections */
+
+section{
+    padding:40px 20px;
+}
+
+section h2{
+    text-align:center;
+    color:rgb(139, 69, 19);
+    margin-bottom:20px;
+    font-size:26px;
+}
+
+section p{
+    text-align:center;
+    font: size 16px;
+}
+
+/* Food Cards */
+
+.food-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    margin-top:40px;
+}
+
+.food-card{
+    width:100%;
+    max-width:300px;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0, 0, 0, 0.2);
+    transition:0.3s;
+}
+
+.food-card:hover{
+    transform:translateY(-8px);
+}
+
+.food-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+figcaption{
+    text-align:center;
+    font-weight:bold;
+    font-size:20px;
+    color:rgb(139, 69, 19);
+    padding:15px;
+}
+
+.food-card p{
+    padding:0 20px 25px;
+    font-size:16px;
+    text-align:center;
+}
+
+/* About Section */
+
+#about{
+    background-color:rgb(255, 242, 230);
+}
+
+/* Opening Hours */
+
+.hours{
+    background:rgb(255, 242, 230);
+    text-align:center;
+}
+
+.hours-card{
+    width:100%;
+    max-width:500px;
+    margin:30px auto;
+    background:white;
+    border-radius:15px;
+    padding:30px;
+    box-shadow:0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.hours-card p{
+    display:flex;
+    justify-content:space-between;
+    padding:15px 0;
+    border-bottom:1px solid rgb(221, 221, 221);
+    font-size:18px;
+}
+
+.hours-card p:last-child{
+    border-bottom:none;
+}
+
+.hours-card strong{
+    color:rgb(139, 69, 19);
+}
+
+/* Reservation Form */
+
+form{
+    width:100%;
+    max-width:550px;    
+    margin:30px auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+form label{
+    display:block;
+    margin-top:15px;
+    margin-bottom:6px;
+    font-weight:bold;
+}
+
+form input:not([type="checkbox"]):not([type="radio"]):not([type="file"]),
+form textarea,
+form select{
+    width:100%;
+    padding:12px;
+    border:1px solid rgb(204, 204, 204);
+    border-radius:8px;
+    font-size:16px;
+}
+
+form textarea{
+    resize:vertical;
+}
+
+.form-buttons input{
+    width:150px;
+    margin-top:25px;
+    background-color:rgb(139, 69, 19);
+    color:white;
+    border:none;
+    cursor:pointer;
+    font-size:18px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+
+.form-buttons input:hover{
+    background-color:rgb(201, 124, 93);
+}
+
+fieldset{
+    border:2px solid rgb(139, 69, 19);
+    padding:20px;
+    margin-bottom:25px;
+    border-radius:10px;
+    background:rgb(255, 248, 231);
+}
+
+
+legend{
+    color:rgb(139, 69, 19);
+    font-size:20px;
+    font-weight:bold;
+}
+
+input[type="checkbox"],
+input[type="radio"]{
+    width:auto;
+    margin-right:8px;
+}
+
+
+fieldset input[type="checkbox"] + label,
+fieldset input[type="radio"] + label{
+
+    display:inline-flex;
+    margin-right:15px;
+}
+
+/* Footer */
+
+footer{
+    background-color:rgb(34, 34, 34);
+    color:white;
+    text-align:center;
+    padding:25px 15px;
+}
+
+footer p{
+    margin-bottom:10px;
+}
+
+/* Responsive Design */
+
+/* Tablet */
+@media (min-width:768px){
+
+    header{
+        padding:35px 20px;
+    }
+
+    header h1{
+        font-size:36px;
+    }
+
+    header p{
+        font-size:18px;
+    }
+
+    nav{
+        flex-direction:row;
+        justify-content:center;
+    }
+
+    section{
+        padding:50px 40px;
+    }
+
+    section h2{
+        font-size:30px;
+    }
+
+    section p{
+        font-size:18px;
+    }
+
+    .hero img{
+        height:350px;
+    }
+
+    .food-card{
+        width:45%;
+    }
+
+    form{
+        width:90%;
+    }
+
+}
+
+/* Desktop */
+@media (min-width:992px){
+
+    header h1{
+        font-size:42px;
+    }
+
+    .hero img{
+        height:500px;
+    }
+
+    section{
+        padding:60px 10%;
+    }
+
+    section h2{
+        font-size:32px;
+    }
+
+    .food-card{
+        width:300px;
+    }
+
+    form{
+        width:550px;
+    }
+
+}
